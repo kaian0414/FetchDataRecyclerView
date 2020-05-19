@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="5dp"
+    android:onClick="chapOnclick">
+
+    <RelativeLayout
+        android:id="@+id/chap_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/chap_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/chap_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chap_cardview"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_toEndOf="@+id/chap_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
